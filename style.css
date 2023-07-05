@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Belanosima', sans-serif;
+font-family: 'Open Sans', sans-serif;
+background:url(./images/pxfuel.jpg);
+}
+.logo{
+    font-weight: 700;
+    font-size: 35px;
+}
+header{
+    display:flex;
+    height:100px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    color: snow;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    padding:0 20px;
+    display:inline-block;
+    color: snow;
+}
+li a::after{
+    content: '';
+    display: block;
+    height:4px;
+    width: 0%;
+    background: #c4c4f7;
+    transition: all .5s
+}
+li a:hover::after{
+    width:100%;
+}
+main{
+    height: calc(100vh - 100px);
+    object-fit: cover;
+}
+main h1,p{
+    text-align: center;
+    color: snow;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr;
+    margin-left:33%;
+    margin-top:20px;
+    line-height: 30px;
+
+}
+h1{
+    font-size: 55px;
+}
+
+.signup-btn{
+    background: #c4c4f7;
+    padding: 10px 20px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+}
